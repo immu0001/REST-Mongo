@@ -26,9 +26,9 @@ class AllDocs(Resource):
         return all
 
 
-
+api.add_resource(AllDocs, "/")
 api.add_resource(LastOne, "/LastOne")
-api.add_resource(AllDocs, "/AllDocs")
+#api.add_resource(AllDocs, "/AllDocs")
 
 if __name__ == '__main__':
     app.run(debug=True)
